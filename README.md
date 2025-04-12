@@ -2,4 +2,5 @@
 
 ## Contributors
 - Pranav 
+- Avinash Kumar
  
