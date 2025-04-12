@@ -48,7 +48,6 @@ const Index = () => {
             )}
             
             <div className="ml-auto">
-              {/* We could add map controls here */}
             </div>
           </div>
           
