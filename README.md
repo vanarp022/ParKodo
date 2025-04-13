@@ -56,12 +56,12 @@ ParKodo is a **location-based smart parking system** designed to reduce urban ve
 
 2. **Install dependencies:**
    ```bash
-   bun install
+   npm i
    ```
 
 3. **Start the development server:**
    ```bash
-   bun run dev
+   npm run dev
    ```
 
 4. **Open in browser:**
