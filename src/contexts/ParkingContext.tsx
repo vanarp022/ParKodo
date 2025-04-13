@@ -2,11 +2,11 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 // Sample parking data for different locations
 const parkingLocations = {
-  'Connaught Place': [
+  'Patna': [
     {
       id: 101,
       name: 'Central Park Garage',
-      address: '123 Central Park West, New Delhi',
+      address: '123 Central Park West, Patna',
       distance: '0.3 miles',
       rating: 4.7,
       pricePerHour: 12.5,
@@ -34,7 +34,7 @@ const parkingLocations = {
           pricePerHour: 18.0,
           pricePerHourBike: 10.8,
           description: 'Protected from weather',
-          availableSpotsCar: 2,
+          availableSpotsCar: 0,
           availableSpotsMotorbike: 1,
           features: {
             surveillance: true,
@@ -61,12 +61,12 @@ const parkingLocations = {
     {
       id: 102,
       name: 'Midtown Plaza Parking',
-      address: '456 Madison Ave, New Delhi',
+      address: '456 Madison Ave, Patna',
       distance: '0.8 miles',
       rating: 4.5,
       pricePerHour: 14.0,
       pricePerHourBike: 8.4,
-      availableSpotsCar: 6,
+      availableSpotsCar: 0,
       availableSpotsMotorbike: 2,
       features: {
         surveillance: true,
@@ -102,7 +102,7 @@ const parkingLocations = {
     {
       id: 103,
       name: 'Downtown Secure Parking',
-      address: '789 Broadway, New Delhi',
+      address: '789 Broadway, Patna',
       distance: '1.2 miles',
       rating: 4.8,
       pricePerHour: 15.0,
@@ -141,11 +141,11 @@ const parkingLocations = {
       ]
     }
   ],
-  'Patna': [
+  'Connaught Place': [
     {
       id: 201,
       name: 'Millennium Park Garage',
-      address: '123 Michigan Ave, Patna',
+      address: '123 Michigan Ave, New Delhi',
       distance: '0.4 miles',
       rating: 4.6,
       pricePerHour: 11.0,
@@ -186,7 +186,7 @@ const parkingLocations = {
     {
       id: 202,
       name: 'The Loop Parking',
-      address: '456 State St, Patna',
+      address: '456 State St, New Delhi',
       distance: '0.7 miles',
       rating: 4.3,
       pricePerHour: 9.5,
@@ -220,7 +220,7 @@ const parkingLocations = {
       rating: 4.4,
       pricePerHour: 10.0,
       pricePerHourBike: 6.0,
-      availableSpotsCar: 8,
+      availableSpotsCar: 0,
       availableSpotsMotorbike: 2,
       features: {
         surveillance: true,
@@ -234,7 +234,7 @@ const parkingLocations = {
           pricePerHour: 10.0,
           pricePerHourBike: 6.0,
           description: 'Standard parking spot',
-          availableSpotsCar: 6,
+          availableSpotsCar: 0,
           availableSpotsMotorbike: 1
         },
         {

@@ -207,7 +207,7 @@ const ParkingBookingForm = ({ selectedLocation }: { selectedLocation?: { lat: nu
     
     if (!availableSpots || availableSpots <= 0) {
       toast({
-        title: "No spots available",
+        title: "No spots available Currently!",
         description: `Sorry, there are no ${vehicleType} spots available for this parking type.`,
         variant: "destructive"
       });
@@ -365,7 +365,7 @@ const ParkingBookingForm = ({ selectedLocation }: { selectedLocation?: { lat: nu
   const renderAvailableLocations = () => {
     return (
       <div className="mt-2">
-        <p className="text-xs mb-5 text-muted-foreground mb-1">Use Demo city: Patna, Kashi, Connaught Place...</p>
+        <p className="text-xs mb-5 text-muted-foreground mb-1">Use Demo city: Patna, Kashi, Connaught Place, Bihta...</p>
         {/* <div className="flex flex-wrap gap-1">
           {Object.keys(locationParkings).map(city => (
             <Badge 
@@ -1082,9 +1082,9 @@ const ParkingBookingForm = ({ selectedLocation }: { selectedLocation?: { lat: nu
       {/* No Spots Available Dialog */}
 <Dialog open={showZeroSpotsAlert} onOpenChange={setShowZeroSpotsAlert}>
   <DialogContent className="sm:max-w-md">
-    <DialogTitle>No Parking Spots Available</DialogTitle>
+    <DialogTitle>No Parking Spots Available Currently!</DialogTitle>
     <DialogDescription>
-      No parking {vehicleType} spots are available at this location right now.
+      No {vehicleType} spots are available at this location right now.
     </DialogDescription>
     <div className="bg-amber-50 p-3 rounded-md mt-3 text-sm flex items-start gap-2">
       <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
