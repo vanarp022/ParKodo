@@ -1,5 +1,6 @@
 
-import React from "react"; 
+// import React from "react";
+import React, { useState } from "react"; 
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,11 +11,13 @@ import { UserProvider } from "./contexts/UserContext";
 import Index from "./pages/Index";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import SplashScreen from "./components/SplashScreen";
 
 // Create a client
 const queryClient = new QueryClient();
 
 function App() {
+  const [showSplash, setShowSplash] = useState(true);
   return (
     <QueryClientProvider client={queryClient}>
       <UserProvider>
@@ -22,6 +25,9 @@ function App() {
           <TooltipProvider>
             <Toaster />
             <Sonner />
+            {showSplash ? (
+              <SplashScreen onFinish={() => setShowSplash(false)} />
+            ) : (
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Index />} />
@@ -30,6 +36,7 @@ function App() {
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </BrowserRouter>
+            )}
           </TooltipProvider>
         </ParkingProvider>
       </UserProvider>

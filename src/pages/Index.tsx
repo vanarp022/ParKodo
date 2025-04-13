@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import Navbar from '@/components/Navbar';
@@ -48,7 +47,6 @@ const Index = () => {
             )}
             
             <div className="ml-auto">
-              {/* We could add map controls here */}
             </div>
           </div>
           
