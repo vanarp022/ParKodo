@@ -11,8 +11,8 @@ const parkingLocations = {
       rating: 4.7,
       pricePerHour: 12.5,
       pricePerHourBike: 7.5,
-      availableSpotsCar: 10,
-      availableSpotsMotorbike: 5,
+      availableSpotsCar: 8,
+      availableSpotsMotorbike: 2,
       features: {
         surveillance: true,
         evCharging: true,
