@@ -1,5 +1,5 @@
 
-# 🚗 ParKodo – Smart Parking Made Simple
+# 🚗 ParKodo – Revolutionizing Urban Parking - One Click at a Time
 
 **Built with ❤️ at Byteverse Hackathon | NIT Patna**
 
@@ -77,5 +77,4 @@ ParKodo is a **location-based smart parking system** designed to reduce urban ve
 - Parking owners get better utilization of underused spaces.
 - Cities experience reduced congestion.
 
-## **SUMMARY**
-**"Completing the project with a great start!!"**
+---
